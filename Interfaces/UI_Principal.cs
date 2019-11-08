@@ -217,17 +217,21 @@ namespace Bot_Dofus_1._29._1.Interfaces
                             case 0://General
                                 cuenta.connexion.SendPacket("BM*|" + textBox_enviar_consola.Text + "|", true);
                                 break;
-
-                            case 1://Reclutamiento
+                                
+                            case 1://Recrutement
                                 cuenta.connexion.SendPacket("BM?|" + textBox_enviar_consola.Text + "|", true);
                                 break;
-
-                            case 2://Comercio
+                                
+                            case 2://Commerce
                                 cuenta.connexion.SendPacket("BM:|" + textBox_enviar_consola.Text + "|", true);
                                 break;
 
-                            case 3://Mensaje privado
+                            case 3://Message privé
                                 cuenta.connexion.SendPacket("BM" + textBox_nombre_privado.Text + "|" + textBox_enviar_consola.Text + "|", true);
+                                break;
+
+                            case 4://Canal guilde
+                                cuenta.connexion.SendPacket("BM%|" + textBox_enviar_consola.Text + "|",true);
                                 break;
                         }
                     break;
